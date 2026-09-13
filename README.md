@@ -6,25 +6,29 @@ Repo: https://github.com/Mjpalm13/same-exam
 
 First AI commit, before I changed anything: https://github.com/Mjpalm13/same-exam/commit/d0ee442
 
-This is a three-screen mock-up. The thing a first-time user should get immediately: **find classmates already studying this exam tonight.**
+This is a three-screen mock-up.
+
+**Affordance sentence:** Find classmates already studying this exam tonight.
+
+That line is the headline on the landing screen. The kicker above it is the value: Get unstuck tonight.
 
 ---
 
 ## Need, persona, capability, value
 
-I kept these separate on purpose. The need does not name the product. The capability is an action, not a feeling. The value is the payoff.
+One sentence each. I kept them distinct: the need does not name the product, the capability is an action, and the value is the payoff after.
 
 **Need**  
-It's the night before an exam and you're already on campus, but you're stuck and studying alone. You don't know if anyone else from the class is even in the building. What people do now is post in the class GroupMe and hope, or walk around HBLL looking for a face they recognize. Either way you burn the study block.
+The night before an exam, students are already on campus and studying alone, they do not know who else from the class is nearby, and posting in GroupMe or walking the library usually burns the study block.
 
 **Persona**  
-Someone who actually studies on campus before exams, maybe 2-4 times a semester, usually in a 2-3 hour stretch between dinner and 10. They have a laptop with them. They want one or two people from the *same class*, not a random big study group.
+Studies on campus 2-4 exam nights a semester, in 2-3 hour blocks between dinner and 10, carries a laptop, and wants one or two people from the same class rather than a big group.
 
 **Capability**  
 Find classmates who are studying this subject on campus tonight.
 
 **Value**  
-Learning. You get unstuck on the actual exam material instead of sitting there spinning by yourself.
+Learning. They get unstuck on the actual exam material instead of spinning alone.
 
 ---
 
@@ -76,10 +80,10 @@ If I have time I'd also ask: "Click around for a second. What would you tap firs
 ## First read (I opened my own live link like I hadn't seen it)
 
 **Does the landing signal the capability and the value before you really read?**  
-After I revised it, yes. The headline is the whole point. There's one button. The card on the right is an example of classmates already on an exam, which is the learning part, without turning the page into a second product.
+After I revised it, yes. You do not have to read the paragraph. The small line at the top says "Get unstuck tonight" (value: learning). The big headline is the affordance sentence / capability. One orange button. The card is classmates already on exam material, so the value is sitting there as an example, not as a second product.
 
 **Does everything on the landing earn its place?**  
-Now it does. "Tonight on campus" just tells you when this is for. The paragraph under the headline is the GroupMe/walking-around problem. The card isn't decoration, it's proof that a table exists right now. "No account. If a table fits, you walk over." is there so people don't go looking for sign up. The first version did not pass this. I had two other buttons (host a table, create account) plus map/chat/calendar feature boxes, so nothing was the main job.
+Now it does. "Get unstuck tonight" is the value before you read anything else. The paragraph under the headline is the GroupMe/walking-around problem. The card isn't decoration, it's proof that a table exists right now. "No account. If a table fits, you walk over." is there so people don't go looking for sign up. The first version did not pass this. I had two other buttons (host a table, create account) plus map/chat/calendar feature boxes, so nothing was the main job.
 
 **What belongs together, and which Gestalt grouping did I use?**  
 - Landing: figure-ground. Dark header and the orange button sit on the paper background so they come forward. The preview card is one common region. Inside it, proximity keeps "the exam" next to "the walk."  
