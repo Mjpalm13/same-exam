@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table — SameExam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html">Same<span>Exam</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="tonight.html">Tonight</a>
+        <a href="tonight.html">Host a table</a>
+        <a href="index.html">Account</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <p class="kicker"><a href="tonight.html">← Tonight’s tables</a></p>
+      <h1 id="course">STAT 230 Exam 2</h1>
+      <p class="lede" id="summary">
+        Maya and Jordan are already working through hypothesis testing. Walk
+        over if you want to get unstuck on the same exam tonight.
+      </p>
+
+      <div class="detail-grid">
+        <section class="panel">
+          <h2>Who’s there</h2>
+          <div class="people-row" id="people">
+            <div class="avatar">M</div>
+            <div class="avatar">J</div>
+          </div>
+          <p id="working">On: confidence intervals vs. p-values, then the practice exam.</p>
+          <p class="note">They said they will be here until about 9:30pm.</p>
+          <a class="btn btn-primary" href="tonight.html">Message the table</a>
+        </section>
+        <aside class="panel">
+          <h2>Place</h2>
+          <p class="walk" id="walk">6 min</p>
+          <p id="place">HBLL, 3rd floor quiet zone, tables by the west windows.</p>
+          <p class="note">Bring the review packet if you have it.</p>
+          <a class="btn btn-secondary" href="index.html">I’m walking over</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer>SameExam mock-up · three screens · no login required</footer>
+    <script>
+      const tables = {
+        stat230: {
+          course: "STAT 230 Exam 2",
+          summary:
+            "Maya and Jordan are already working through hypothesis testing. Walk over if you want to get unstuck on the same exam tonight.",
+          people: ["M", "J"],
+          working:
+            "On: confidence intervals vs. p-values, then the practice exam.",
+          walk: "6 min",
+          place: "HBLL, 3rd floor quiet zone, tables by the west windows.",
+        },
+        is201: {
+          course: "IS 201 Midterm",
+          summary:
+            "Alec, Priya, and Sam are practicing ERDs. Walk over if you want to get unstuck on the same exam tonight.",
+          people: ["A", "P", "S"],
+          working: "On: entity relationships for the bookstore case, then old midterms.",
+          walk: "3 min",
+          place: "Tanner Building, 2nd floor lobby, the long table by the stairs.",
+        },
+        cell120: {
+          course: "CELL 120 Unit 10",
+          summary:
+            "Hannah and Luke are reviewing muscle physiology. Walk over if you want to get unstuck on the same exam tonight.",
+          people: ["H", "L"],
+          working: "On: sliding filament + unit quiz mistakes.",
+          walk: "8 min",
+          place: "Life Sciences atrium, couches near the south doors.",
+        },
+      };
+
+      const id = new URLSearchParams(location.search).get("id") || "stat230";
+      const t = tables[id] || tables.stat230;
+      document.title = t.course + " — SameExam";
+      document.getElementById("course").textContent = t.course;
+      document.getElementById("summary").textContent = t.summary;
+      document.getElementById("working").textContent = t.working;
+      document.getElementById("walk").textContent = t.walk;
+      document.getElementById("place").textContent = t.place;
+      document.getElementById("people").innerHTML = t.people
+        .map((p) => '<div class="avatar">' + p + "</div>")
+        .join("");
+    </script>
+  </body>
+</html>
