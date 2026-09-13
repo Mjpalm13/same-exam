@@ -17,71 +17,88 @@
       <a class="wordmark" href="index.html">Same<span>Exam</span></a>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="tonight.html">Tonight</a>
-        <a href="tonight.html">Host a table</a>
-        <a href="index.html">Account</a>
+        <a href="tonight.html">Tonight’s tables</a>
       </nav>
     </header>
 
     <main class="page">
-      <p class="kicker"><a href="tonight.html">← Tonight’s tables</a></p>
+      <p class="kicker"><a href="tonight.html">← All tables tonight</a></p>
       <h1 id="course">STAT 230 Exam 2</h1>
       <p class="lede" id="summary">
-        Maya and Jordan are already working through hypothesis testing. Walk
-        over if you want to get unstuck on the same exam tonight.
+        Maya and Jordan are already working through hypothesis testing. If this
+        is your stuck point, walk over and sit down.
       </p>
 
       <div class="detail-grid">
-        <section class="panel">
-          <h2>Who’s there</h2>
+        <section class="panel panel-primary">
+          <p class="cluster-label">The learning</p>
+          <h2>What they’re on right now</h2>
           <div class="people-row" id="people">
             <div class="avatar">M</div>
             <div class="avatar">J</div>
           </div>
-          <p id="working">On: confidence intervals vs. p-values, then the practice exam.</p>
-          <p class="note">They said they will be here until about 9:30pm.</p>
-          <a class="btn btn-primary" href="tonight.html">Message the table</a>
+          <p id="who">Maya and Jordan · one seat left</p>
+          <p id="working">
+            Confidence intervals vs. p-values, then the practice exam. They
+            said they will be here until about 9:30pm.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" id="walk-btn" href="#going">I’m walking over</a>
+            <a class="btn-quiet" href="tonight.html">See another table</a>
+          </div>
+          <p class="note" id="going" hidden>
+            You’re in. No account — just go sit down with them.
+          </p>
         </section>
+
         <aside class="panel">
+          <p class="cluster-label">The walk</p>
           <h2>Place</h2>
           <p class="walk" id="walk">6 min</p>
           <p id="place">HBLL, 3rd floor quiet zone, tables by the west windows.</p>
-          <p class="note">Bring the review packet if you have it.</p>
-          <a class="btn btn-secondary" href="index.html">I’m walking over</a>
+          <p class="note" id="tip">Bring the review packet if you have it.</p>
         </aside>
       </div>
     </main>
 
-    <footer>SameExam mock-up · three screens · no login required</footer>
+    <footer>SameExam · three-screen mock-up · no login</footer>
     <script>
       const tables = {
         stat230: {
           course: "STAT 230 Exam 2",
           summary:
-            "Maya and Jordan are already working through hypothesis testing. Walk over if you want to get unstuck on the same exam tonight.",
+            "Maya and Jordan are already working through hypothesis testing. If this is your stuck point, walk over and sit down.",
           people: ["M", "J"],
+          who: "Maya and Jordan · one seat left",
           working:
-            "On: confidence intervals vs. p-values, then the practice exam.",
+            "Confidence intervals vs. p-values, then the practice exam. They said they will be here until about 9:30pm.",
           walk: "6 min",
           place: "HBLL, 3rd floor quiet zone, tables by the west windows.",
+          tip: "Bring the review packet if you have it.",
         },
         is201: {
           course: "IS 201 Midterm",
           summary:
-            "Alec, Priya, and Sam are practicing ERDs. Walk over if you want to get unstuck on the same exam tonight.",
+            "Alec, Priya, and Sam are practicing ERDs. If this is your stuck point, walk over and sit down.",
           people: ["A", "P", "S"],
-          working: "On: entity relationships for the bookstore case, then old midterms.",
+          who: "Alec, Priya, and Sam · table is open",
+          working:
+            "Entity relationships for the bookstore case, then old midterms. Here until about 9pm.",
           walk: "3 min",
           place: "Tanner Building, 2nd floor lobby, the long table by the stairs.",
+          tip: "Bring the case packet if you have it.",
         },
         cell120: {
           course: "CELL 120 Unit 10",
           summary:
-            "Hannah and Luke are reviewing muscle physiology. Walk over if you want to get unstuck on the same exam tonight.",
+            "Hannah and Luke are reviewing muscle physiology. If this is your stuck point, walk over and sit down.",
           people: ["H", "L"],
-          working: "On: sliding filament + unit quiz mistakes.",
+          who: "Hannah and Luke · two seats left",
+          working:
+            "Sliding filament plus last week’s quiz mistakes. Here until about 10pm.",
           walk: "8 min",
           place: "Life Sciences atrium, couches near the south doors.",
+          tip: "Bring Unit 10 notes if you have them.",
         },
       };
 
@@ -90,12 +107,25 @@
       document.title = t.course + " — SameExam";
       document.getElementById("course").textContent = t.course;
       document.getElementById("summary").textContent = t.summary;
+      document.getElementById("who").textContent = t.who;
       document.getElementById("working").textContent = t.working;
       document.getElementById("walk").textContent = t.walk;
       document.getElementById("place").textContent = t.place;
+      document.getElementById("tip").textContent = t.tip;
       document.getElementById("people").innerHTML = t.people
         .map((p) => '<div class="avatar">' + p + "</div>")
         .join("");
+
+      document.getElementById("walk-btn").addEventListener("click", (e) => {
+        e.preventDefault();
+        const note = document.getElementById("going");
+        note.hidden = false;
+        note.textContent =
+          "You’re walking over. They are on " +
+          t.course +
+          " — sit down and get unstuck.";
+        note.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
     </script>
   </body>
 </html>
