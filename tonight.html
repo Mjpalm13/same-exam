@@ -17,55 +17,90 @@
       <a class="wordmark" href="index.html">Same<span>Exam</span></a>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="tonight.html" aria-current="page">Tonight</a>
-        <a href="tonight.html">Host a table</a>
-        <a href="index.html">Account</a>
+        <a href="tonight.html" aria-current="page">Tonight’s tables</a>
       </nav>
     </header>
 
     <main class="page">
       <div class="page-head">
-        <p class="kicker">Tonight on campus</p>
-        <h1>Classmates already sitting down.</h1>
+        <p class="kicker">The capability in action</p>
+        <h1>Who is already sitting down tonight.</h1>
         <p class="lede">
-          Pick a table for the exam you are actually taking. Walk over if the
-          material and the place both fit.
+          Filter to the exam you are taking, then pick a table by the material
+          they are on — not by who posted in the class chat.
         </p>
-        <div class="filters">
-          <button class="chip active" type="button">All exams</button>
-          <button class="chip" type="button">STAT 230</button>
-          <button class="chip" type="button">IS 201</button>
-          <button class="chip" type="button">CELL 120</button>
-        </div>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter by exam">
+        <button class="chip active" type="button" data-filter="all">All exams</button>
+        <button class="chip" type="button" data-filter="stat230">STAT 230</button>
+        <button class="chip" type="button" data-filter="is201">IS 201</button>
+        <button class="chip" type="button" data-filter="cell120">CELL 120</button>
       </div>
 
       <section class="table-list">
-        <a class="table-card" href="table.html?id=stat230">
+        <a class="table-card" href="table.html?id=stat230" data-exam="stat230">
           <h2>STAT 230 Exam 2</h2>
-          <span class="badge">2 studying · 1 seat</span>
-          <p class="place">HBLL 3rd floor quiet zone</p>
-          <p class="people">Maya, Jordan</p>
-          <p class="meta">Hypothesis testing · started 7:10pm · 6 min walk</p>
+          <span class="badge">1 seat left</span>
+          <div class="card-clusters">
+            <div class="cluster">
+              <p class="cluster-label">They’re on</p>
+              <p>Hypothesis testing · Maya, Jordan</p>
+            </div>
+            <div class="cluster">
+              <p class="cluster-label">Walk over</p>
+              <p>HBLL 3rd floor quiet zone · 6 min</p>
+            </div>
+          </div>
         </a>
 
-        <a class="table-card" href="table.html?id=is201">
+        <a class="table-card" href="table.html?id=is201" data-exam="is201">
           <h2>IS 201 Midterm</h2>
           <span class="badge">3 studying</span>
-          <p class="place">Tanner Building, 2nd floor lobby</p>
-          <p class="people">Alec, Priya, Sam</p>
-          <p class="meta">ERD practice set · started 6:40pm · 3 min walk</p>
+          <div class="card-clusters">
+            <div class="cluster">
+              <p class="cluster-label">They’re on</p>
+              <p>ERD practice set · Alec, Priya, Sam</p>
+            </div>
+            <div class="cluster">
+              <p class="cluster-label">Walk over</p>
+              <p>Tanner Building 2nd floor lobby · 3 min</p>
+            </div>
+          </div>
         </a>
 
-        <a class="table-card" href="table.html?id=cell120">
+        <a class="table-card" href="table.html?id=cell120" data-exam="cell120">
           <h2>CELL 120 Unit 10</h2>
-          <span class="badge">2 studying · 2 seats</span>
-          <p class="place">Life Sciences atrium</p>
-          <p class="people">Hannah, Luke</p>
-          <p class="meta">Muscle physiology review · started 7:35pm · 8 min walk</p>
+          <span class="badge">2 seats left</span>
+          <div class="card-clusters">
+            <div class="cluster">
+              <p class="cluster-label">They’re on</p>
+              <p>Muscle physiology · Hannah, Luke</p>
+            </div>
+            <div class="cluster">
+              <p class="cluster-label">Walk over</p>
+              <p>Life Sciences atrium · 8 min</p>
+            </div>
+          </div>
         </a>
       </section>
     </main>
 
-    <footer>SameExam mock-up · three screens · no login required</footer>
+    <footer>SameExam · three-screen mock-up · no login</footer>
+    <script>
+      const chips = document.querySelectorAll(".chip");
+      const cards = document.querySelectorAll(".table-card");
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          const filter = chip.dataset.filter;
+          cards.forEach((card) => {
+            card.style.display =
+              filter === "all" || card.dataset.exam === filter ? "" : "none";
+          });
+        });
+      });
+    </script>
   </body>
 </html>

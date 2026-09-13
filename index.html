@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SameExam — study with your class tonight</title>
+    <title>SameExam — find classmates studying this exam tonight</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,52 +17,38 @@
       <a class="wordmark" href="index.html">Same<span>Exam</span></a>
       <nav class="nav">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="tonight.html">Tonight</a>
-        <a href="tonight.html">Host a table</a>
-        <a href="index.html">Account</a>
+        <a href="tonight.html">Tonight’s tables</a>
       </nav>
     </header>
 
     <main class="hero">
       <div>
-        <p class="kicker">Campus study nights</p>
+        <p class="kicker">Tonight on campus</p>
         <h1>Find classmates already studying this exam tonight.</h1>
         <p class="lede">
           Walk over, sit down, and get unstuck on the actual material — instead
           of waiting on a class chat that never turns into a table.
         </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tonight.html">See who’s studying tonight</a>
-          <a class="btn btn-secondary" href="tonight.html">Host your own table</a>
-        </div>
-        <form class="signup" action="tonight.html">
-          <input type="email" placeholder="Email for a reminder" aria-label="Email" />
-          <button class="btn btn-ghost" type="submit">Create account</button>
-        </form>
+        <a class="btn btn-primary" href="tonight.html">See who’s studying tonight</a>
+        <p class="support">No account. If a table fits, you walk over.</p>
       </div>
-      <aside class="hero-card">
-        <p class="badge">Live now</p>
-        <h3>STAT 230 Exam 2 · HBLL 3rd</h3>
-        <p>Maya and Jordan are working through hypothesis testing. One seat left.</p>
-        <p class="note">6 minute walk from the Tanner Building.</p>
-      </aside>
+
+      <a class="preview" href="table.html?id=stat230">
+        <div class="preview-label">Happening now · STAT 230</div>
+        <div class="preview-body">
+          <h3>Maya and Jordan are already on hypothesis testing.</h3>
+          <div class="cluster">
+            <p class="cluster-label">The exam</p>
+            <p>STAT 230 Exam 2 · one seat left</p>
+          </div>
+          <div class="cluster">
+            <p class="cluster-label">Walk over</p>
+            <p>HBLL 3rd floor quiet zone · 6 min from Tanner</p>
+          </div>
+        </div>
+      </a>
     </main>
 
-    <section class="features">
-      <article class="feature">
-        <h3>Live campus map</h3>
-        <p>See every building where classmates have checked in tonight.</p>
-      </article>
-      <article class="feature">
-        <h3>Class chat</h3>
-        <p>Message the table before you walk over, or keep it to GroupMe.</p>
-      </article>
-      <article class="feature">
-        <h3>Calendar sync</h3>
-        <p>Save a table to your phone so you remember to come back after dinner.</p>
-      </article>
-    </section>
-
-    <footer>SameExam mock-up · three screens · no login required</footer>
+    <footer>SameExam · three-screen mock-up · no login</footer>
   </body>
 </html>
