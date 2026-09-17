@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Table — Study Buddy</title>
+    <title>Study Buddy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,7 +109,7 @@
 
       const id = new URLSearchParams(location.search).get("id") || "stat230";
       const t = tables[id] || tables.stat230;
-      document.title = t.course + " — Study Buddy";
+      document.title = t.course + " Study Buddy";
       document.getElementById("course").textContent = t.course;
       document.getElementById("summary").textContent = t.summary;
       document.getElementById("who").textContent = t.who;
