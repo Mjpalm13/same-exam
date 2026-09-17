@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SameExam — find classmates studying this exam tonight</title>
+    <title>Study Buddy — find classmates studying this exam tonight</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,32 +14,39 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="wordmark" href="index.html">Same<span>Exam</span></a>
-      <nav class="nav">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="tonight.html">Tonight’s tables</a>
-      </nav>
+      <div class="wrap bar-inner">
+        <a class="brand" href="index.html">
+          <img class="logo" src="img/logo.png" alt="" width="40" height="40" />
+          <span class="wordmark">Study <span>Buddy</span></span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="tonight.html">Tonight’s tables</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="hero">
+    <main class="hero wrap">
       <div>
-        <p class="kicker">Get unstuck tonight</p>
+        <p class="kicker">Get unstuck with someone</p>
         <h1>Find classmates already studying this exam tonight.</h1>
         <p class="lede">
-          Walk over, sit down, and get unstuck on the actual material — instead
-          of waiting on a class chat that never turns into a table.
+          Nothing is worse than not knowing who to turn to. If you don’t really
+          know people in class, posting in the group chat or walking around
+          looking is a hassle, and it can feel embarrassing. See who is already
+          on the same material and just walk over.
         </p>
         <a class="btn btn-primary" href="tonight.html">See who’s studying tonight</a>
-        <p class="support">No account. If a table fits, you walk over.</p>
+        <p class="support">No account. Takes a minute. If it fits, you sit down.</p>
       </div>
 
       <a class="preview" href="table.html?id=stat230">
-        <div class="preview-label">Happening now · STAT 230</div>
+        <div class="preview-label">Visible now · STAT 230</div>
         <div class="preview-body">
           <h3>Maya and Jordan are already on hypothesis testing.</h3>
           <div class="cluster">
-            <p class="cluster-label">The exam</p>
-            <p>STAT 230 Exam 2 · one seat left</p>
+            <p class="cluster-label">Who you’d sit with</p>
+            <p>Two classmates from your exam · one seat left</p>
           </div>
           <div class="cluster">
             <p class="cluster-label">Walk over</p>
@@ -49,6 +56,6 @@
       </a>
     </main>
 
-    <footer>SameExam · three-screen mock-up · no login</footer>
+    <footer class="wrap">Study Buddy · three-screen mock-up · no login</footer>
   </body>
 </html>

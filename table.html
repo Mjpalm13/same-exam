@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Table — SameExam</title>
+    <title>Table — Study Buddy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,24 +14,29 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="wordmark" href="index.html">Same<span>Exam</span></a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="tonight.html">Tonight’s tables</a>
-      </nav>
+      <div class="wrap bar-inner">
+        <a class="brand" href="index.html">
+          <img class="logo" src="img/logo.png" alt="" width="40" height="40" />
+          <span class="wordmark">Study <span>Buddy</span></span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="tonight.html">Tonight’s tables</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="page">
+    <main class="page wrap">
       <p class="kicker"><a href="tonight.html">← All tables tonight</a></p>
       <h1 id="course">STAT 230 Exam 2</h1>
       <p class="lede" id="summary">
         Maya and Jordan are already working through hypothesis testing. If this
-        is your stuck point, walk over and sit down.
+        is where you’re stuck, walk over and sit down with them.
       </p>
 
       <div class="detail-grid">
         <section class="panel panel-primary">
-          <p class="cluster-label">The learning</p>
+          <p class="cluster-label">Sit with them</p>
           <h2>What they’re on right now</h2>
           <div class="people-row" id="people">
             <div class="avatar">M</div>
@@ -61,13 +66,13 @@
       </div>
     </main>
 
-    <footer>SameExam · three-screen mock-up · no login</footer>
+    <footer class="wrap">Study Buddy · three-screen mock-up · no login</footer>
     <script>
       const tables = {
         stat230: {
           course: "STAT 230 Exam 2",
           summary:
-            "Maya and Jordan are already working through hypothesis testing. If this is your stuck point, walk over and sit down.",
+            "Maya and Jordan are already working through hypothesis testing. If this is where you’re stuck, walk over and sit down with them.",
           people: ["M", "J"],
           who: "Maya and Jordan · one seat left",
           working:
@@ -79,7 +84,7 @@
         is201: {
           course: "IS 201 Midterm",
           summary:
-            "Alec, Priya, and Sam are practicing ERDs. If this is your stuck point, walk over and sit down.",
+            "Alec, Priya, and Sam are practicing ERDs. If this is where you’re stuck, walk over and sit down with them.",
           people: ["A", "P", "S"],
           who: "Alec, Priya, and Sam · table is open",
           working:
@@ -91,7 +96,7 @@
         cell120: {
           course: "CELL 120 Unit 10",
           summary:
-            "Hannah and Luke are reviewing muscle physiology. If this is your stuck point, walk over and sit down.",
+            "Hannah and Luke are reviewing muscle physiology. If this is where you’re stuck, walk over and sit down with them.",
           people: ["H", "L"],
           who: "Hannah and Luke · two seats left",
           working:
@@ -104,7 +109,7 @@
 
       const id = new URLSearchParams(location.search).get("id") || "stat230";
       const t = tables[id] || tables.stat230;
-      document.title = t.course + " — SameExam";
+      document.title = t.course + " — Study Buddy";
       document.getElementById("course").textContent = t.course;
       document.getElementById("summary").textContent = t.summary;
       document.getElementById("who").textContent = t.who;
@@ -121,9 +126,9 @@
         const note = document.getElementById("going");
         note.hidden = false;
         note.textContent =
-          "You’re walking over. They are on " +
+          "You’re walking over. Sit down with them and get unstuck on " +
           t.course +
-          " — sit down and get unstuck.";
+          ".";
         note.scrollIntoView({ behavior: "smooth", block: "nearest" });
       });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tonight’s tables — SameExam</title>
+    <title>Tonight’s tables — Study Buddy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,20 +14,26 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="wordmark" href="index.html">Same<span>Exam</span></a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="tonight.html" aria-current="page">Tonight’s tables</a>
-      </nav>
+      <div class="wrap bar-inner">
+        <a class="brand" href="index.html">
+          <img class="logo" src="img/logo.png" alt="" width="40" height="40" />
+          <span class="wordmark">Study <span>Buddy</span></span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="tonight.html" aria-current="page">Tonight’s tables</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="page">
+    <main class="page wrap">
       <div class="page-head">
-        <p class="kicker">Tonight on campus</p>
-        <h1>Who is already sitting down tonight.</h1>
+        <p class="kicker">See who’s already here</p>
+        <h1>Other people from your class are sitting down tonight.</h1>
         <p class="lede">
-          Filter to the exam you are taking, then pick a table by the material
-          they are on — not by who posted in the class chat.
+          You can see what they’re working on and how far you’d walk. Pick a
+          table instead of spending half an hour trying to get a group chat to
+          turn into a real session.
         </p>
       </div>
 
@@ -86,7 +92,7 @@
       </section>
     </main>
 
-    <footer>SameExam · three-screen mock-up · no login</footer>
+    <footer class="wrap">Study Buddy · three-screen mock-up · no login</footer>
     <script>
       const chips = document.querySelectorAll(".chip");
       const cards = document.querySelectorAll(".table-card");
