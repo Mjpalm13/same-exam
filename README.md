@@ -16,10 +16,10 @@ Study Buddy is a three-screen mock-up for finding classmates who are already stu
 
 ## 1. Need, Persona, Capability, and Value
 
-**Need**  
+**Need:**  
 Many BYU students experience high-stress academic isolation right before exams because there is no real-time way to locate and verify classmates who are studying for the same exam at that exact moment.
 
-**Persona 1: Last-Minute Leah**
+**Persona (Last-Minute Leah):**
 
 | **Name** | Leah Morgan |
 | --- | --- |
@@ -28,12 +28,12 @@ Many BYU students experience high-stress academic isolation right before exams b
 | **Personal Characteristics** | Leah usually studies alone, but she would rather have someone to work with when she gets stuck. She is comfortable reaching out to classmates, but she does not know many of them well enough to randomly message them about studying. She does not want to spend a lot of time trying to figure out who is available. When she gets stuck on a problem right before an exam, she wishes she could quickly see which classmates are studying for the same test and who is available and willing to work together. |
 | **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can get unstuck, connect with classmates, and feel more prepared for the test. |
 
-**Primary capability**  
+**Primary Capability:**  
 See which classmates are currently studying for the same exam and are available to connect.
 
 The important part is that Leah can quickly see who is already studying instead of having to know people in her class or organize a study group from scratch. She can find someone who is already there, connect when she gets stuck, and get back to studying.
 
-**Fundamental value**  
+**Fundamental Value:**  
 Connection! The product helps students feel less alone when they are struggling with an exam by making it easier to connect with classmates who are in the same situation. For Leah, this is especially valuable because she is new back to campus and does not know many people in her classes yet. Instead of spending her limited study time trying to find someone to study with, she can quickly connect with a classmate and focus on learning.
 
 ---
