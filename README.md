@@ -21,9 +21,8 @@ Many BYU students experience high-stress academic isolation right before exams b
 
 **Target persona: Last-Minute Leah**
 
-| | |
-| --- | --- |
 | **Name** | Leah Morgan |
+| --- | --- |
 | **Demographics** | Age: 21. Gender: Female. Occupation: College student, majoring in Business. |
 | **Life circumstances** | Leah is a junior living in an apartment near campus. She has a busy schedule with classes, work, and other responsibilities, so she usually studies in the library between classes or in the evening. When an exam is coming up, she brings her laptop, notes, and class materials with her and tries to make the most of the time she has. |
 | **Personal characteristics** | Leah usually studies by herself, but she likes having someone to work with when she gets stuck. She is comfortable using technology and messaging classmates, but she doesn't want to spend a lot of time figuring out who is available to study. Right before an exam, she can feel stressed when she doesn't understand something and wishes she could quickly find a classmate who is studying for the same test. |
