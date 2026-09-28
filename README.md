@@ -38,7 +38,7 @@ Connection! The product helps students feel less alone when they are struggling 
 
 ---
 
-## 2. The three screens
+## 2. The Three Screens
 
 I only built three screens, and I picked the ones that show the idea working. I did not use a slot on login, settings, or creating a table, because those would not tell me if the main idea is clear.
 
@@ -59,7 +59,7 @@ Design question: Does seeing the people and what they are studying make “I’m
 
 ---
 
-## 3. Design question plan
+## 3. Design Question Plan
 
 I am not collecting answers yet. These are worded how I would actually say them to someone in that persona. Next to each one is what I think they will say, and which part of the prototype that guess comes from.
 
@@ -90,9 +90,9 @@ I think they hit the orange button or the STAT 230 card and expect a list of tab
 
 ---
 
-## 4. Design justification and first read
+## 4. Design Justification and First Read
 
-After I revised it, I opened the live site again like I had never seen it.
+After I revised it, I opened the live site again, as I had never seen it.
 
 **Does the landing signal the capability and value at first glance, before reading?**  
 Mostly, yes. The first thing I notice is “Get unstuck with someone,” then “Find classmates already studying this exam tonight.” That gives me both the reason to care and what I can do. The orange button is the one obvious next action.
@@ -112,7 +112,7 @@ Tonight’s tables: Each table is a common region. Inside each card, proximity g
 Table: The people and the study topic are grouped together because they answer “Is this someone I want to study with?” The location is in its own region because it answers the next question: “Can I actually get there?”
 
 **Do screens 2 and 3 stay on mission, and can you get home?**  
-Yes. Tonight is only live tables you could actually join. The table screen is only “is this my stuck point, and can I walk over and sit down?” Home, the logo, and the Study Buddy name go back to the landing from everywhere.
+Yes. Tonight is the only time there are live tables you could actually join. The table screen is only: “Is this my stuck point, and can I walk over and sit down?” Home, the logo, and the Study Buddy name go back to the landing from everywhere.
 
 **What the AI initially got wrong, and what I changed**  
 The AI’s first version was not bad visually, but it was trying to build too much. It treated the idea like a small social network instead of a focused way to find someone to study with. Browse, host, and sign up had similar visual weight, so there was no clear signaling of the primary capability.
@@ -123,7 +123,7 @@ The biggest change I made was reducing the landing screen to one main message, o
 
 The main change was reducing competing actions so the primary affordance became visually dominant. This was about signaling and grouping, not a color preference.
 
-Before (first AI landing). Browse, host, and sign up all have similar visual weight, plus map / chat / calendar boxes:
+Before (first AI landing). Browse, host, and sign up all have similar visual weight, plus map/chat/calendar boxes:
 
 ![First AI landing screen](screenshots/landing-before.png)
 
