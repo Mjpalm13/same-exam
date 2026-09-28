@@ -23,8 +23,15 @@ I kept these four things separate. The need is the situation and the workaround.
 **Need**  
 Before an exam, students who get stuck often do not know who to ask for help. If they do not already know people in the class, they might post in a group chat, walk around looking for someone they recognize, or just study alone.
 
-**Target persona**  
-A college student who studies on campus, has a laptop and class materials with them, and has a couple of hours before an exam. They usually study alone but would rather work with one or two classmates when they get stuck.
+**Target persona: Last-Minute Leah**
+
+| | |
+| --- | --- |
+| **Name** | Leah Morgan |
+| **Demographics** | Age: 21. Gender: Female. Occupation: College student, majoring in Business. |
+| **Life circumstances** | Leah is a junior living in an apartment near campus. She has a busy schedule with classes, work, and other responsibilities, so she usually studies in the library between classes or in the evening. When an exam is coming up, she brings her laptop, notes, and class materials with her and tries to make the most of the time she has. |
+| **Personal characteristics** | Leah usually studies by herself, but she likes having someone to work with when she gets stuck. She is comfortable using technology and messaging classmates, but she doesn't want to spend a lot of time figuring out who is available to study. Right before an exam, she can feel stressed when she doesn't understand something and wishes she could quickly find a classmate who is studying for the same test. |
+| **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can ask questions, study together, and feel more prepared. |
 
 **Primary capability**  
 Find classmates who are studying this subject on campus tonight.
