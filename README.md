@@ -29,12 +29,12 @@ Many BYU students experience high-stress academic isolation right before exams b
 | **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can get unstuck, connect with classmates, and feel more prepared for the test. |
 
 **Primary capability**  
-Find classmates who are studying this subject on campus tonight.
+See which classmates are currently studying for the same exam and are available to connect.
 
-The important part is that they can see who is already there instead of having to organize something from scratch.
+The important part is that Leah can quickly see who is already studying instead of having to know people in her class or organize a study group from scratch. She can find someone who is already there, connect when she gets stuck, and get back to studying.
 
 **Fundamental value**  
-Learning. The product does not teach the material itself. The value is getting unstuck on the material by connecting with classmates who are already studying the same thing. That matters because the student can spend their limited study time actually working through the material instead of trying to find someone.
+Connection! The product helps students feel less alone when they are struggling with an exam by making it easier to connect with classmates who are in the same situation. For Leah, this is especially valuable because she is new back to campus and does not know many people in her classes yet. Instead of spending her limited study time trying to find someone to study with, she can quickly connect with a classmate and focus on learning.
 
 ---
 
