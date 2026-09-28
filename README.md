@@ -16,7 +16,7 @@ Study Buddy is a three-screen mock-up for finding classmates who are already stu
 ## 1. Need, Persona, Capability, and Value
 
 **Need:**  
-Many BYU students experience high-stress academic isolation right before exams because there is no real-time way to locate and verify classmates who are studying for the same exam at that exact moment.
+Many BYU students feel isolated and stressed right before exams because they do not know which classmates are studying at the same time. They usually study alone, message people they already know, or ask in a GroupMe, which takes time and does not guarantee that someone is actually available nearby.
 
 **Persona (Last-Minute Leah):**
 
@@ -28,39 +28,49 @@ Many BYU students experience high-stress academic isolation right before exams b
 | **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can get unstuck, connect with classmates, and feel more prepared for the test. |
 
 **Primary Capability:**  
-See which classmates are currently studying for the same exam and are available to connect.
+Find classmates who are already studying for the same exam nearby.
 
-The important part is that Leah can quickly see who is already studying instead of having to know people in her class or organize a study group from scratch. She can find someone who is already there, connect when she gets stuck, and get back to studying.
+The important part is that Leah can see who is already there instead of having to know people in her class or organize a study group from scratch. She can see who is studying, what they are working on, and where they are, then decide who she wants to join.
+
 
 **Fundamental Value:**  
-Connection. The product helps students feel less alone when they are struggling with an exam by making it easier to connect with classmates who are in the same situation. For Leah, this is especially valuable because she is new back to campus and does not know many people in her classes yet. Instead of spending her limited study time trying to find someone to study with, she can quickly connect with a classmate and focus on learning.
+Connection! Leah can quickly go from studying alone to knowing that there are other students working through the same material nearby. This matters because she has recently returned to campus and does not know many people in her classes yet. Instead of spending her limited study time trying to find someone, she can connect with a classmate who is already studying and get unstuck.
+
 
 ---
 
 ## 2. The Three Screens
 
-I only built three screens because I wanted to focus on the main thing I am testing with Study Buddy. I did not want to use one of my three screens for things like logging in, settings, or creating an account because those parts do not really tell me whether the main idea works.
 
 **Screen 1: Landing**
-Page: https://mjpalm13.github.io/same-exam/ (`index.html`)
+Page: index.html
+
 Job: Explain what Study Buddy does and give the user one obvious thing to do.
+
 Why it earned a slot: This is the first thing someone sees, so they should understand the idea quickly.
+
 Design question: After looking at this screen for five seconds, would someone understand that Study Buddy helps them find classmates who are already studying tonight, or would they think it is just another social or chat app?
 
 ![Screen 1 landing](screenshots/screen-1-landing.png)
 
-**Screen 2: Tonight’s tables**
-Page: https://mjpalm13.github.io/same-exam/tonight.html
+**Screen 2: Tonight’s Tables**
+Page: tonight.html
+
 Job: Show the main idea actually working. The user can see people who are already studying for the same exam and where they are.
+
 Why it earned a slot: This is the part that makes Study Buddy different from just messaging people in a GroupMe. The student can see who is already studying instead of having to organize something themselves.
+
 Design question: Can someone look at the different tables and quickly figure out which one they would actually want to walk to?
 
 ![Screen 2 tonight’s tables](screenshots/screen-2-tonight.png)
 
-**Screen 3: Table**
-Page: https://mjpalm13.github.io/same-exam/table.html?id=stat230
+**Screen 3: Table Details**
+Page: table.html?id=stat230
+
 Job: Show what happens after someone finds a table. They can see who is there, what they are working on, and decide whether they want to join them.
-Why it earned a slot: I wanted to show the actual moment where the student goes from “I am stuck” to “I found people who are working on the same thing.”
+
+Why it earned a slot: I wanted to show the actual moment where the student goes from "I am stuck" to "I found people who are working on the same thing."
+
 Design question: Does seeing the people and what they are studying make going over to the table feel like the natural next step?
 
 ![Screen 3 table](screenshots/screen-3-table.png)
@@ -69,84 +79,121 @@ Design question: Does seeing the people and what they are studying make going ov
 
 ## 3. Design Question Plan
 
-I am not collecting answers yet. These are the questions I would ask someone who fits Leah's situation. I want the questions to help me figure out whether the problem is real to them and whether the prototype makes sense without me having to explain it first.
+I am not collecting real answers yet. These are the questions I would ask someone who fits Leah's situation. I want to see if the problem is real to them and whether they understand the prototype without me explaining it.
 
-**Need**
+### Need:
+
+**Question:**
 “Think about the last time you were on campus the night before a test, studying by yourself, and wished you had someone from your class there. What did you end up doing?”
 
-I want to see what students actually do when this happens. My guess is that they might message a GroupMe, text someone they already know, walk around the library hoping to recognize someone, or just keep studying by themselves. If that is what they normally do, it would help show whether there is actually a gap that Study Buddy could fill.
+**Prediction:**
+I think they will say they messaged a GroupMe, texted someone they already knew, walked around the library hoping to recognize someone, or just kept studying alone.
 
-**Value**
-“If Study Buddy actually worked for you on a night like that, what would you get out of it?”
+**Based on:**
+This prediction comes from the problem described on the landing page and the STAT 230 example showing students who are already studying.
 
-I expect answers like “connection,” “help,” or “getting unstuck.” I do not think the main value is that studying becomes easier. The point is that students can find someone who is already in the same situation instead of feeling like they have to figure everything out by themselves.
+### Value:
 
-**Persona**
+**Question:**
+“If this problem were actually solved for you on a night like that, what would you get out of it?”
+
+**Prediction:**
+I think they will say connection, help, or getting unstuck. I do not expect them to describe the value as simply “easier” because the main benefit is being able to connect with someone who is already studying.
+
+**Based on:**
+The landing page leads with “Get unstuck with someone,” and the Table screen shows both the people and what they are working on.
+
+### Persona:
+
+**Question:**
 “How often does this situation actually happen to you? Where are you usually studying when it does, and how much time do you normally have before the test?”
 
-I want to know if Leah's situation is something students actually experience. My assumption is that this would happen a few times during a semester, usually when they are already on campus with their laptop and have a couple of hours to study. This is also why I made the example locations close enough that someone could realistically walk there.
+**Prediction:**
+I think this comes up a few times during a semester, usually when they are already on campus with their laptop and have a couple of hours to study.
 
-**Capability**
+**Based on:**
+Leah's situation and the nearby study locations shown on the Tonight's Tables screen.
+
+### Capability:
+
+**Question 1:**
 “I am going to show you this first screen for five seconds, and then I will hide it. What would you say this thing does?”
 
-This is probably one of the most important questions I would ask. I want to know if someone understands the main idea without me explaining it. Ideally, they would say something like, “It shows me who in my class is already studying tonight so I can go study with them.” If they think it is a social network, chat app, or something they have to sign up for, then I know the landing page still needs work.
+**Prediction:**
+I think they will say that it shows them who in their class is already studying tonight so they can go study with them.
 
-**Capability**
+**Based on:**
+The headline, the “Get unstuck with someone” message, and the single main button, “See who's studying tonight.”
+
+
+**Question 2:**
 “Click around for a second. What would you tap first, and what do you think will happen?”
 
-I want to see what people naturally do instead of telling them where to go. I expect them to click the orange button or the STAT 230 example and look for a list of classmates and tables they can actually go to.
+**Prediction:**
+I think they will click the orange button or the STAT 230 example and expect to see classmates and study tables they can actually go to.
+
+**Based on:**
+The landing page gives the orange button the most attention, and the example table looks like the starting point for finding people.
+
 
 ---
 
 ## 4. Design Justification and First Read
 
-After I made my changes, I opened the live site again and looked at it like I had never seen it before. I wanted to see if the main idea was still obvious without thinking about what I had built behind the scenes.
+After I made my changes, I opened the live site again and looked at it like I had never seen it before. I wanted to see if I could understand the main idea without thinking about what I had built behind the scenes.
 
-**Does the landing make the main idea clear right away?**
+### Does the landing screen signal the primary capability and value at first glance?
 
-Mostly, yes. The first thing I notice is “Get unstuck with someone,” followed by “Find classmates already studying this exam tonight.” I think those two lines work together because one explains why I would care and the other explains what Study Buddy actually does. The orange button also gives me one obvious next step.
+Mostly, yes. The first thing I notice is “Get unstuck with someone,” followed by “Find classmates already studying this exam tonight.” I think these work together because the first line gives me the value and the second tells me what I can actually do. The orange button is also the main affordance, so there is an obvious next step.
 
-I did have to be careful with the example table on the landing page. I wanted to show that this is something real that a student could use, but I did not want it to look like another main feature. I kept it because I think seeing an actual table with students studying makes the idea easier to understand than just telling someone they can find classmates.
+The example table also helps signal what the product does. Instead of just telling me that I can find classmates, I can immediately see an example of students already studying. I wanted the example to support the main idea without becoming another competing action.
 
-**Does every element on the landing page have a reason to be there?**
+### Does every element on the landing screen earn its place?
 
-I think most of it does now. The first version had a lot more going on. There were options for browsing, hosting a table, creating an account, chat, a map, and other features. Those things could be useful in a real product, but they were taking attention away from the one thing I actually wanted to test.
+I think it does now. The first AI version had more features, including Browse, Host, Sign Up, chat, a map, and other options. These made the page feel more like a full social app and gave several actions similar visual weight.
 
-I removed those features because I wanted the landing page to answer one question: “Can I find a classmate who is already studying for the same exam?”
+I removed those because they were competing with the primary affordance. I wanted the landing screen to focus on one question: “Can I find a classmate who is already studying for the same exam?”
 
-**What belongs together on each screen?**
+### What belongs together on each screen?
 
-On the landing page, I wanted the main message and button to feel like one group so it is obvious what Study Buddy is and what I should do next. I also grouped the example table together because it represents one actual opportunity to study with someone.
+On the landing page, I used proximity to keep the main message and button together so they read as one main action. The example table is also grouped into a common region because it represents one opportunity to study with someone.
 
-On the Tonight's Tables screen, each table is its own group. The students are grouped with what they are studying because I want the user to know both who is there and what they are working on. The building and walking time are grouped together because those answer a different question: “Where are they, and can I realistically get there?”
+On the Tonight's Tables screen, each table is a separate common region. Inside each card, proximity groups the people with what they are studying. The building and walking time are also grouped together because they answer the question of where the table is and how easy it is to get there. Similarity between the cards helps them feel like different options within the same product.
 
-On the Table screen, the people and the study topic are grouped together because those are the things Leah needs to decide if this is the right group for her. The location is separated because it answers the next question: “Where do I go?”
+On the Table screen, the people and study topic are grouped together because they help the student decide if this is the right group for them. The location is separated because it answers the next question: where do I go?
 
-**Do screens 2 and 3 stay focused on the main idea?**
+### Do screens 2 and 3 stay on mission?
 
-Yes. The Tonight's Tables screen is focused on finding people who are already studying. The Table screen is focused on deciding whether that is someone I want to join. I did not want either screen to turn into a full social or messaging app.
+Yes. The Tonight's Tables screen is focused on finding people who are already studying. The Table screen is focused on deciding whether that is a group the student wants to join.
 
-I also made sure there is an easy way to get back home. The Study Buddy name and logo take the user back to the landing page from the other screens.
+I did not want either screen to turn into a full social or messaging app. The goal is to help the student find someone and actually go study with them.
 
-**What the AI initially got wrong, and what I changed**
+I also made sure there is an obvious way back to the landing screen. The Study Buddy name and logo take the user back home from the other screens.
 
-The first version the AI created was not bad visually, but it was trying to make Study Buddy into too much of an app. It had browsing, hosting, signing up, chat, a map, and other features. The problem was that all of those things made it harder to see what the main idea actually was.
+### What did the AI initially get wrong, and what did I change?
 
-The biggest change I made was simplifying the landing page. Instead of trying to explain everything Study Buddy could eventually do, I focused it on one message, one button, and one example of the idea working.
+The first version the AI created was not bad visually, but it was trying to build too much. It treated Study Buddy more like a small social network instead of a focused way to find someone to study with.
 
-I also changed the main action on the table screen from “Message the table” to “I’m walking over.” I made this change because messaging is basically what students can already do through GroupMe or text. The point of Study Buddy is to make it easier to actually find someone who is already studying nearby and go study with them.
+The biggest problem was signaling. Browse, Host, and Sign Up all had similar visual weight, and there were also features for chat, a map, and other things. Because there were so many possible actions, the primary capability was not obvious.
 
-**Before and after**
+I simplified the landing page to one main message, one main affordance, and one example of the capability working. This made the figure-ground relationship clearer because the important information stands out from the supporting content.
 
-The biggest difference between the first AI version and my revised version is that I removed things that were competing with the main idea. I wanted the main action to stand out without needing a lot of explanation.
+I also changed the main action on the Table screen from “Message the table” to “I’m walking over.” I made this change because messaging is already something students can do through GroupMe or text. The point of Study Buddy is to make it easier to find someone who is already studying nearby and actually go study with them.
 
-Before, the landing page had Browse, Host, Sign Up, and extra features like chat and a map:
+### Before and after
 
-![First AI landing screen](screenshots/landing-before.png)
+The biggest change between the first AI version and my revised version was reducing the number of competing actions. I wanted the primary affordance to be visually dominant so a first-time user would understand what to do without needing an explanation.
 
-After, I reduced it to the main value, what Study Buddy does, one button, and an example of someone already studying:
+**Before:** The landing page had Browse, Host, Sign Up, and extra features like chat and a map. These competed with the main idea.
 
-![Revised Study Buddy landing screen](screenshots/landing-after.png)
+[First AI landing screen](https://github.com/Mjpalm13/same-exam/blob/main/screenshots/landing-before.png) ([image](https://github.com/Mjpalm13/same-exam/raw/main/screenshots/landing-before.png))
+
+**After:** I reduced the landing page to the main value, what Study Buddy does, one button, and an example table.
+
+[Revised Study Buddy landing screen](https://github.com/Mjpalm13/same-exam/blob/main/screenshots/landing-after.png) ([image](https://github.com/Mjpalm13/same-exam/raw/main/screenshots/landing-after.png))
+
+This revision was motivated by the design question of whether someone could understand the primary capability quickly. The first version had too many competing actions, while the revised version uses stronger signaling and grouping to make the main action easier to recognize.
 
 First AI commit: https://github.com/Mjpalm13/same-exam/commit/d0ee442
 Revised landing: https://github.com/Mjpalm13/same-exam/blob/main/index.html
+
