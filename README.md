@@ -12,16 +12,12 @@ Study Buddy is a three-screen mock-up for finding classmates who are already stu
 
 **Affordance sentence:** Find classmates already studying this exam tonight.
 
-That is the headline on the landing screen. The small line above it is the value: **Get unstuck with someone.**
-
 ---
 
 ## 1. Need, persona, capability, and value
 
-I kept these four things separate. The need is the situation and the workaround. The capability is the action. The value is what is better afterward. Study Buddy is not named in the need.
-
 **Need**  
-Before an exam, students who get stuck often do not know who to ask for help. If they do not already know people in the class, they might post in a group chat, walk around looking for someone they recognize, or just study alone.
+Many BYU students experience high-stress academic isolation right before exams because there is no real-time way to locate and verify classmates who are studying for the same exam at that exact moment.
 
 **Target persona: Last-Minute Leah**
 
