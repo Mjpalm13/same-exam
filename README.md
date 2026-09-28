@@ -14,7 +14,7 @@ Study Buddy is a three-screen mock-up for finding classmates who are already stu
 
 ---
 
-## 1. Need, persona, capability, and value
+## 1. Need, Persona, Capability, and Value
 
 **Need**  
 Many BYU students experience high-stress academic isolation right before exams because there is no real-time way to locate and verify classmates who are studying for the same exam at that exact moment.
@@ -29,37 +29,48 @@ Many BYU students experience high-stress academic isolation right before exams b
 | **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can get unstuck, connect with classmates, and feel more prepared for the test. |
 
 **Primary capability**  
-Find classmates who are studying this subject on campus tonight.
+See which classmates are currently studying for the same exam and are available to connect.
 
-The important part is that they can see who is already there instead of having to organize something from scratch.
+The important part is that Leah can quickly see who is already studying instead of having to know people in her class or organize a study group from scratch. She can find someone who is already there, connect when she gets stuck, and get back to studying.
 
 **Fundamental value**  
-Learning. The product does not teach the material itself. The value is getting unstuck on the material by connecting with classmates who are already studying the same thing. That matters because the student can spend their limited study time actually working through the material instead of trying to find someone.
+Connection. The product helps students feel less alone when they are struggling with an exam by making it easier to connect with classmates who are in the same situation. For Leah, this is especially valuable because she is new back to campus and does not know many people in her classes yet. Instead of spending her limited study time trying to find someone to study with, she can quickly connect with a classmate and focus on learning.
 
 ---
 
-## 2. The three screens
+## 2. The Three Screens
+
+These are three separate pages, not one long page. Each one has its own URL, so they can be opened and screenshotted on their own.
 
 I only built three screens, and I picked the ones that show the idea working. I did not use a slot on login, settings, or creating a table, because those would not tell me if the main idea is clear.
 
-**Landing**  
+**Screen 1: Landing**  
+Page: https://mjpalm13.github.io/same-exam/ (`index.html`)  
 Job: Signal the primary capability and the value as fast as possible.  
 Why it earned a slot: If this screen is confusing, nobody gets to the product.  
 Design question: After five seconds, do they understand what Study Buddy does, or do they think it is another social or chat app?
 
-**Tonight’s tables**  
+![Screen 1 landing](screenshots/screen-1-landing.png)
+
+**Screen 2: Tonight’s tables**  
+Page: https://mjpalm13.github.io/same-exam/tonight.html  
 Job: Show the capability happening. These are people studying right now for this exam.  
 Why it earned a slot: This is the product working. A profile page would not tell me whether someone can actually see who is there and decide where to go.  
 Design question: Can they quickly tell which table they would actually want to walk to?
 
-**Table**  
+![Screen 2 tonight’s tables](screenshots/screen-2-tonight.png)
+
+**Screen 3: Table**  
+Page: https://mjpalm13.github.io/same-exam/table.html?id=stat230  
 Job: Show the value in action. They see a stuck point, they see real people, and they can decide to go sit down.  
 Why it earned a slot: The list by itself is mostly browsing. This is where they decide this is what they need help with, and they can actually go there.  
 Design question: Does seeing the people and what they are studying make “I’m walking over” feel like the obvious next step?
 
+![Screen 3 table](screenshots/screen-3-table.png)
+
 ---
 
-## 3. Design question plan
+## 3. Design Question Plan
 
 I am not collecting answers yet. These are worded how I would actually say them to someone in that persona. Next to each one is what I think they will say, and which part of the prototype that guess comes from.
 
@@ -71,7 +82,7 @@ I think they will say they posted in GroupMe, walked around the library looking 
 **Value**  
 “If that actually got solved for you on a night like that, what is one or two words for what you would get out of it? Why those words?”
 
-I think they will say unstuck or learning, not easier. That is why the table screen leads with who is there and what they are working on, and why the kicker is “Get unstuck with someone.”
+I think they will say connection or unstuck, not easier. That is why the table screen leads with who is there and what they are working on, and why the kicker is “Get unstuck with someone.”
 
 **Persona**  
 “How often does this even come up for you? And what are you usually doing when it does, like where are you and how much time do you have?”
@@ -90,9 +101,9 @@ I think they hit the orange button or the STAT 230 card and expect a list of tab
 
 ---
 
-## 4. Design justification and first read
+## 4. Design Justification and First Read
 
-After I revised it, I opened the live site again like I had never seen it.
+After I revised it, I opened the live site again, as I had never seen it.
 
 **Does the landing signal the capability and value at first glance, before reading?**  
 Mostly, yes. The first thing I notice is “Get unstuck with someone,” then “Find classmates already studying this exam tonight.” That gives me both the reason to care and what I can do. The orange button is the one obvious next action.
@@ -112,7 +123,7 @@ Tonight’s tables: Each table is a common region. Inside each card, proximity g
 Table: The people and the study topic are grouped together because they answer “Is this someone I want to study with?” The location is in its own region because it answers the next question: “Can I actually get there?”
 
 **Do screens 2 and 3 stay on mission, and can you get home?**  
-Yes. Tonight is only live tables you could actually join. The table screen is only “is this my stuck point, and can I walk over and sit down?” Home, the logo, and the Study Buddy name go back to the landing from everywhere.
+Yes. Tonight is the only time there are live tables you could actually join. The table screen is only: “Is this my stuck point, and can I walk over and sit down?” Home, the logo, and the Study Buddy name go back to the landing from everywhere.
 
 **What the AI initially got wrong, and what I changed**  
 The AI’s first version was not bad visually, but it was trying to build too much. It treated the idea like a small social network instead of a focused way to find someone to study with. Browse, host, and sign up had similar visual weight, so there was no clear signaling of the primary capability.
@@ -123,7 +134,7 @@ The biggest change I made was reducing the landing screen to one main message, o
 
 The main change was reducing competing actions so the primary affordance became visually dominant. This was about signaling and grouping, not a color preference.
 
-Before (first AI landing). Browse, host, and sign up all have similar visual weight, plus map / chat / calendar boxes:
+Before (first AI landing). Browse, host, and sign up all have similar visual weight, plus map/chat/calendar boxes:
 
 ![First AI landing screen](screenshots/landing-before.png)
 
