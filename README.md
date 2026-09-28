@@ -10,7 +10,6 @@ First AI commit, before I changed anything: https://github.com/Mjpalm13/same-exa
 
 Study Buddy is a three-screen mock-up for finding classmates who are already studying for the same exam nearby. Instead of creating a study group from scratch, you can see who is already studying, what they are working on, and where they are.
 
-**Affordance sentence:** Find classmates already studying this exam tonight.
 
 ---
 
