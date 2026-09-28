@@ -14,7 +14,7 @@ Study Buddy is a three-screen mock-up for finding classmates who are already stu
 
 ---
 
-## 1. Need, persona, capability, and value
+## 1. Need, Persona, Capability, and Value
 
 **Need**  
 Many BYU students experience high-stress academic isolation right before exams because there is no real-time way to locate and verify classmates who are studying for the same exam at that exact moment.
