@@ -19,14 +19,14 @@ Study Buddy is a three-screen mock-up for finding classmates who are already stu
 **Need**  
 Many BYU students experience high-stress academic isolation right before exams because there is no real-time way to locate and verify classmates who are studying for the same exam at that exact moment.
 
-**Target persona: Last-Minute Leah**
+**Persona 1: Last-Minute Leah**
 
 | **Name** | Leah Morgan |
 | --- | --- |
-| **Demographics** | Age: 21. Gender: Female. Occupation: College student, majoring in Business. |
-| **Life circumstances** | Leah is a junior living in an apartment near campus. She has a busy schedule with classes, work, and other responsibilities, so she usually studies in the library between classes or in the evening. When an exam is coming up, she brings her laptop, notes, and class materials with her and tries to make the most of the time she has. |
-| **Personal characteristics** | Leah usually studies by herself, but she likes having someone to work with when she gets stuck. She is comfortable using technology and messaging classmates, but she doesn't want to spend a lot of time figuring out who is available to study. Right before an exam, she can feel stressed when she doesn't understand something and wishes she could quickly find a classmate who is studying for the same test. |
-| **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can ask questions, study together, and feel more prepared. |
+| **Demographics** | **Age:** 21<br>**Gender:** Female<br>**Occupation:** College Student, majoring in Business |
+| **Life Circumstances** | Leah is a junior who recently returned to BYU after serving a mission. She is living in an apartment near campus and is getting back into the routine of college life. Between classes, work, and other responsibilities, she does not always have a lot of time to study. She usually heads to the library with her laptop, notes, and class materials and tries to get as much done as possible before an exam. Since she has recently returned from her mission, she does not know many people in her classes very well yet. |
+| **Personal Characteristics** | Leah usually studies alone, but she would rather have someone to work with when she gets stuck. She is comfortable reaching out to classmates, but she does not know many of them well enough to randomly message them about studying. She does not want to spend a lot of time trying to figure out who is available. When she gets stuck on a problem right before an exam, she wishes she could quickly see which classmates are studying for the same test and who is available and willing to work together. |
+| **Goal** | Quickly find one or two classmates who are studying for the same exam right now so she can get unstuck, connect with classmates, and feel more prepared for the test. |
 
 **Primary capability**  
 Find classmates who are studying this subject on campus tonight.
